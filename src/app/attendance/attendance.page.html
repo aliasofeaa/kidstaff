@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">ATTENDANCE</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+
+    <ion-item>
+      <ion-label position="stacked">Date</ion-label>
+      <ion-input type="date" required></ion-input>
+    </ion-item>
+
+    <ion-item [routerLink]="['/listname']">
+    <ion-button expand="block" color="primary">
+      <ion-icon slot="center" name="send"></ion-icon>
+      SEND
+    </ion-button>
+  </ion-item>
+
+  </div>
+</ion-content>
