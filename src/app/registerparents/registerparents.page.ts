@@ -6,10 +6,10 @@ import {User} from '../models/user.mode';
 
 @Component({
   selector: 'app-register',
-  templateUrl: './register.page.html',
-  styleUrls: ['./register.page.scss'],
+  templateUrl: './registerparents.page.html',
+  styleUrls: ['./registerparents.page.scss'],
 })
-export class RegisterPage implements OnInit {
+export class RegisterparentsPage implements OnInit {
 user = {} as User;
   constructor(
     private toastCtrl: ToastController,
@@ -40,7 +40,7 @@ user = {} as User;
     (await loader).dismiss();
 
     //redirect to home page
-    this.navCtrl.navigateRoot("login");
+    this.navCtrl.navigateRoot("loginparents");
     }
   }
 
@@ -62,7 +62,7 @@ user = {} as User;
           await this.createUser(user);
 
           //redirect to main page
-          this.navCtrl.navigateRoot("main");
+          this.navCtrl.navigateRoot("mainparents");
       } catch (err:any) {
         this.showToast (err);
       }

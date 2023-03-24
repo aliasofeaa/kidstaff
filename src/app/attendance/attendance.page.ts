@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-attendance',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./attendance.page.scss'],
 })
 export class AttendancePage implements OnInit {
+  date:any ="";
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit() {
+  }
+  checkDate(){
+    if (this.date != ""){
+      this.router.navigate(['/listname'])
+    }
   }
 
 }

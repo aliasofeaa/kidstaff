@@ -4,10 +4,10 @@ import { LoadingController, ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-view-post',
-  templateUrl: './profile.page.html',
-  styleUrls: ['./profile.page.scss'],
+  templateUrl: './profileparents.page.html',
+  styleUrls: ['./profileparents.page.scss'],
 })
-export class ProfilePage implements OnInit {
+export class ProfileparentsPage implements OnInit {
   userProfile: any = {};
 
   constructor(

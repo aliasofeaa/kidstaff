@@ -12,11 +12,11 @@
 
     <ion-item>
       <ion-label position="stacked">Date</ion-label>
-      <ion-input type="date" required></ion-input>
+      <ion-input type="date" (ngModel)="date" required></ion-input>
     </ion-item>
 
     <ion-item [routerLink]="['/listname']">
-    <ion-button expand="block" color="primary">
+    <ion-button (click)="date" expand="block" color="primary">
       <ion-icon slot="center" name="send"></ion-icon>
       SEND
     </ion-button>

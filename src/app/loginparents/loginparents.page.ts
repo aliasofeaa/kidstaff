@@ -7,11 +7,11 @@ import {
 import { User } from '../models/user.mode';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.page.html',
-  styleUrls: ['./login.page.scss'],
+  selector: 'app-loginparents',
+  templateUrl: './loginparents.page.html',
+  styleUrls: ['./loginparents.page.scss'],
 })
-export class LoginPage implements OnInit {
+export class LoginparentsPage implements OnInit {
   user = {} as User;
   constructor(
     private toastCtrl: ToastController,
@@ -38,7 +38,7 @@ export class LoginPage implements OnInit {
           console.log(data));
 
         //redirect to home page
-        this.navCtrl.navigateRoot ("mainpage"); 
+        this.navCtrl.navigateRoot ("mainparents"); 
       } catch (e: any){
         this.showToast(e);
       }

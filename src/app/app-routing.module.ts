@@ -39,6 +39,42 @@ const routes: Routes = [
     path: 'listname',
     loadChildren: () => import('./listname/listname.module').then( m => m.ListnamePageModule)
   },
+  {
+    path: 'submit',
+    loadChildren: () => import('./submit/submit.module').then( m => m.SubmitPageModule)
+  },
+  {
+    path: 'loginparents',
+    loadChildren: () => import('./loginparents/loginparents.module').then( m => m.LoginparentsPageModule)
+  },
+  {
+    path: 'staff',
+    loadChildren: () => import('./staff/staff.module').then( m => m.StaffPageModule)
+  },
+  {
+    path: 'parents',
+    loadChildren: () => import('./parents/parents.module').then( m => m.ParentsPageModule)
+  },
+  {
+    path: 'registerparents',
+    loadChildren: () => import('./registerparents/registerparents.module').then( m => m.RegisterparentsPageModule)
+  },
+  {
+    path: 'mainparents',
+    loadChildren: () => import('./mainparents/mainparents.module').then( m => m.MainparentsPageModule)
+  },
+  {
+    path: 'profileparents',
+    loadChildren: () => import('./profileparents/profileparents.module').then( m => m.ProfileparentsPageModule)
+  },
+  {
+    path: 'aboutus',
+    loadChildren: () => import('./aboutus/aboutus.module').then( m => m.AboutusPageModule)
+  },
+  {
+    path: 'contact',
+    loadChildren: () => import('./contact/contact.module').then( m => m.ContactPageModule)
+  },
 ];
 
 @NgModule({

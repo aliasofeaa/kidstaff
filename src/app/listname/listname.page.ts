@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFireStorage } from '@angular/fire/compat/storage';
+import { AngularFirestore } from '@angular/fire/compat/firestore';
+import { ToastController, LoadingController, NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-listname',
@@ -7,7 +10,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListnamePage implements OnInit {
 
-  constructor() { }
+  constructor(
+    private storage: AngularFireStorage,
+    private toastCtrl: ToastController,
+    private loadingCtrl: LoadingController,
+    private navCtrl: NavController,
+    private firestore: AngularFirestore
+  ) {}
 
   ngOnInit() {
   }

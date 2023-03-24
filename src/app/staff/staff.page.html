@@ -1,24 +1,22 @@
 <ion-header>
   <ion-toolbar class="ion-text-center">
     <ion-title>STAFF</ion-title>
+    <ion-buttons slot="start">
+    <ion-back-button></ion-back-button>
+  </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <div>
-    <ion-img src="assets/logo1.png" alt="rpk logo"></ion-img>
-
-    <ion-text color ="white">
-      <h3 align="center"> WELCOME TO TASKA QADRY APPS</h3>
-    </ion-text>
-
+  
     <ion-button
     class="ion-padding"
     expand="block"
     shape="round"
     color="primary"
-    [routerLink]="['/staff']">
-    STAFF
+    [routerLink]="['/login']">
+    LOGIN
   </ion-button>
 
   <ion-button
@@ -26,8 +24,8 @@
     expand="block"
     shape="round"
     color="primary"
-    [routerLink]="['/parents']">
-    PARENTS
+    [routerLink]="['/register']">
+    REGISTER
   </ion-button>
 
 </div>
